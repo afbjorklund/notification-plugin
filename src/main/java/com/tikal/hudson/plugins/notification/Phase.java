@@ -44,7 +44,7 @@ import java.util.Set;
 
 @SuppressWarnings({ "unchecked", "rawtypes" })
 public enum Phase {
-    QUEUED, STARTED, COMPLETED, FINALIZED;
+    QUEUED, STARTED, CHECKOUT, CHANGELOG, COMPLETED, FINALIZED;
 
 	private Result findLastBuildThatFinished(Run run){
         Run previousRun = run.getPreviousCompletedBuild();
